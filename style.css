@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ephesis', cursive;
+}
+
+ body {
+  background-color: #E3E3E3;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.main-setion {
+  height: 80vh;
+  display: flex;
+  position: relative;
+}
+
+.computer-section {
+  background-color: #7C6767;
+  flex: 1 1 350px;
+}
+
+.computer-section h3 {
+  padding: 1.5rem;
+  color: #FBF7F5;
+  font-size: 1.5rem;
+}
+
+.computer-section h1 {
+  color: #E8DCDC;
+  text-align: center;
+  font-size: 3rem;
+}
+.computer-section .description {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #E8DCDC;
+}
+
+
+.player-section {
+  flex: 2 2 450px;
+  background-color: #fff;
+}
+
+.player-section h1{
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: #7C6767;
+}
+
+.middle-secion {
+  background-color: #F1E4E4;
+  width: 70%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}  
+
+.middle-secion img {
+  width: 250px;
+  height: 100px;
+}
+
+/* .middle-secion img {
+  animation: MoveUpDown 0.5s;
+  animation-iteration-count: 2;
+} */
+.animate {
+  animation: MoveUpDown 0.5s;
+  animation-iteration-count: 2;
+}
+.btns {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: translateY(-50px);
+    transform: rotate(-20deg);
+  }
+}
