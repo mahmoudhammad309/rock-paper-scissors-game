@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ephesis', cursive;
 }
 
  body {
   background-color: #E3E3E3;
+  font-family: 'Ephesis', cursive;
 }
 
 .container {
@@ -15,6 +15,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .main-setion {
   height: 80vh;
@@ -62,9 +68,9 @@
 .middle-secion {
   background-color: #F1E4E4;
   width: 70%;
-  height: 40%;
+  height: 45%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -77,18 +83,42 @@
   height: 100px;
 }
 
-/* .middle-secion img {
-  animation: MoveUpDown 0.5s;
-  animation-iteration-count: 2;
-} */
+
 .animate {
   animation: MoveUpDown 0.5s;
   animation-iteration-count: 2;
 }
 .btns {
   position: absolute;
+  top: 12rem;
+  left: 45%;
+}
+
+.btns .start-btn {
+  cursor: pointer;
+  padding: 0.3rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #7C6767;
+  border: 1px solid #7C6767;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btns .start-btn:hover {
+  background-color: #7C6767;
+  color: #E3E3E3;
+  border: 1px solid #E3E3E3;
+}
+
+.winner {
+  position: absolute;
   top: 5rem;
-  left: 50%;
+  left: 45%;
+  font-family: monospace;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  color: red;
 }
 
 @keyframes MoveUpDown {
